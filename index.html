@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genoma - O Manual da Vida</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-gray-200 font-mono">
+    <div id="container" class="absolute inset-0 -z-10"></div> <!-- DNA animation container -->
+    <header id="intro" class="text-center py-20">
+        <h1 class="text-4xl font-bold text-green-400">Genoma - O Manual da Vida</h1>
+        <button id="playAudio" class="mt-5 px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 bg-opacity-75">
+            Reproduzir Áudio
+        </button>
+    </header>
+    <main class="hidden max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg shadow-lg space-y-10">
+        <section class="content-section" id="section1" data-time="0">
+            <h2 class="text-2xl font-bold text-green-400">Imagine um Manual de Instruções</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>Um guia completo que explica como montar, fazer funcionar e manter tudo em ordem. Agora imagine que esse manual está dentro de cada célula do seu corpo. É isso que chamamos de <strong class="text-green-400">genoma</strong>.</p>
+        </section>
+        <section class="content-section" id="section2" data-time="12">
+            <h2 class="text-2xl font-bold text-green-400">O que é o Genoma?</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>O <strong class="text-green-400">genoma</strong> é o conjunto total de informações genéticas de um ser vivo. É nele que estão escritas todas as instruções que dizem como o corpo deve se formar, crescer, funcionar — e até como ele deve se defender ou se reproduzir.</p>
+        </section>
+        <section class="content-section" id="section3" data-time="25">
+            <h2 class="text-2xl font-bold text-green-400">Estrutura do DNA</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>Esse manual é feito de algo chamado <strong>DNA</strong> — o ácido desoxirribonucleico. Uma longa molécula formada por quatro letrinhas: <strong>A</strong>, <strong>T</strong>, <strong>C</strong> e <strong>G</strong>. Essas letras são as bases do <strong>DNA</strong>, e elas se combinam em pares para formar a famosa estrutura de dupla hélice. É como se fossem as páginas do manual, cheias de informações codificadas.</p>
+        </section>
+        <section class="content-section" id="section4" data-time="47">
+            <h2 class="text-2xl font-bold text-green-400">Genes e Proteínas</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>Dentro desse <strong>DNA</strong>, existem trechos chamados <strong>genes</strong>. Cada <strong>gene</strong> é como um parágrafo do manual, responsável por instruir a produção de proteínas — que são as peças fundamentais para construir e manter o nosso corpo funcionando.</p>
+        </section>
+        <section class="content-section" id="section5" data-time="61">
+            <h2 class="text-2xl font-bold text-green-400">Regulação do Genoma</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>Mas o <strong>genoma</strong> vai além dos <strong>genes</strong>. Ele também tem regiões que regulam quando, onde e quanto de cada <strong>gene</strong> deve ser usado. É como um sistema de organização, que decide a hora certa de cada instrução entrar em ação.</p>
+        </section>
+        <section class="content-section" id="section6" data-time="75">
+            <h2 class="text-2xl font-bold text-green-400">O Genoma Humano</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>No caso do ser humano, o <strong>genoma</strong> é imenso: são cerca de 3 bilhões de pares de bases, organizados em 46 cromossomos. Um verdadeiro livro da vida.</p>
+        </section>
+        <section class="content-section" id="section7" data-time="85">
+            <h2 class="text-2xl font-bold text-green-400">O Projeto Genoma Humano</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>E foi com esse espírito de descoberta que nasceu o <strong>Projeto Genoma Humano</strong>, uma iniciativa científica que mapeou, pela primeira vez, quase todas as letras do nosso <strong>DNA</strong>. Um feito que abriu portas para novas formas de tratar doenças, entender a hereditariedade e explorar o que nos torna únicos.</p>
+        </section>
+        <section class="content-section" id="section8" data-time="105">
+            <h2 class="text-2xl font-bold text-green-400">Conclusão</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="my-4 rounded">
+            <p>O <strong class="text-green-400">genoma</strong> é, enfim, a linguagem da vida. Um código invisível que habita cada célula, contando silenciosamente a história de quem somos — e de como a natureza escreve seus segredos.</p>
+        </section>
+    </main>
+    <div class="fixed bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-4">
+        <button id="rewindAudio" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 bg-opacity-75">Rewind</button>
+        <button id="pauseAudio" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 bg-opacity-75">Pause</button>
+    </div>
+    <audio id="genomeAudio" src="audio/audio.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

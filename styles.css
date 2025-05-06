@@ -1,0 +1,45 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Console-like font */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-top: 20%;
+    color: #000; /* Ensure header text is visible */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Tailwind handles button styles */
+}
+
+main {
+    display: none;
+    padding: 20px;
+    /* Tailwind handles main styles */
+}
+
+.content-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.content-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
