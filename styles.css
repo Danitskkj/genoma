@@ -2,26 +2,43 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Console-like font */
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scrolling for the entire site */
+    background-color: #000; /* Terminal-like background */
+    color: #ffffff; /* White text */
 }
 
 header {
     text-align: center;
-    margin-top: 20%;
-    color: #000; /* Ensure header text is visible */
+    margin-top: 15%;
+    color: #00ff00; /* Terminal green */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    /* Tailwind handles button styles */
+    background-color: #003300; /* Dark green */
+    color: #ffffff; /* White text */
+    border: 1px solid #00ff00;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005500; /* Slightly lighter green */
 }
 
 main {
     display: none;
     padding: 20px;
-    /* Tailwind handles main styles */
+    background-color: #001a00; /* Darker green for contrast */
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff00;
+    border: 2px solid #00ff00; /* Terminal green border */
+    max-width: 80%; /* Adjust width for responsiveness */
+    height: auto; /* Allow content to determine height */
+    margin: 50px auto; /* Add top and bottom margins */
+    overflow-y: visible; /* Remove scrolling inside the container */
 }
 
 .content-section {
@@ -35,6 +52,39 @@ main {
     transform: translateY(0);
 }
 
+.content-section h2 {
+    color: #00ff00; /* Terminal green for titles */
+    font-size: 1.5rem; /* Uniform title size */
+    text-align: center; /* Center align titles */
+}
+
+.content-section p {
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Uniform paragraph size */
+    line-height: 1.6; /* Improve readability */
+    text-align: justify; /* Justify text for better alignment */
+}
+
+.content-section strong {
+    color: #00ff00; /* Terminal green for highlighted words */
+}
+
+.content-section::before {
+    content: "> "; /* Terminal-like prefix */
+    color: #00ff00; /* Terminal green */
+    font-weight: bold;
+}
+
+.content-section img {
+    width: 100%; /* Make images responsive */
+    max-width: 600px; /* Limit the width */
+    max-height: 300px; /* Limit the height */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center images */
+    border-radius: 8px; /* Keep rounded corners */
+}
+
 #container {
     position: fixed;
     top: 0;
@@ -42,4 +92,25 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
+    max-width: 80%; /* Adjust width for responsiveness */
+    height: auto; /* Allow content to determine height */
+    margin: 50px auto; /* Add top and bottom margins */
+}
+
+footer {
+    margin-top: 50px; /* Add space at the bottom */
+    text-align: center;
+    color: #00ff00; /* Terminal green */
+    font-size: 1.2rem; /* Slightly larger text */
+}
+
+#agradecimento {
+    text-align: center;
+    margin-top: 20px;
+    color: #00ff00; /* Terminal green */
+    font-size: 1.5rem; /* Larger text for emphasis */
+}
+#agradecimento p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
