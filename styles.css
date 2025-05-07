@@ -7,6 +7,20 @@ body {
     color: #ffffff;
 }
 
+/* Adiciona o efeito CRT */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.postimg.cc/tJhBVh4d/scanlines.png') repeat;
+    opacity: 0.4; 
+    pointer-events: none; /* Garante que não interfira na interação do usuário */
+    z-index: 9999; /* Coloca a camada acima de tudo */
+}
+
 header {
     text-align: center;
     margin-top: 15%;
