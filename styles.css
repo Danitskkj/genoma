@@ -1,10 +1,11 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Press Start 2P', cursive; /* Fonte 8-bit */
     margin: 0;
     padding: 0;
     overflow-y: auto;
     background-color: #000; /* Fundo estilo terminal */
     color: #ffffff;
+    font-size: 0.9rem; /* Reduzido o tamanho da fonte geral */
 }
 
 /* Adiciona o efeito CRT */
@@ -25,6 +26,7 @@ header {
     text-align: center;
     margin-top: 15%;
     color: #00ff00; /* Verde terminal */
+    font-family: 'Press Start 2P', cursive; /* Fonte 8-bit */
 }
 
 button {
@@ -36,6 +38,7 @@ button {
     border: 1px solid #00ff00;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    font-family: 'Press Start 2P', cursive; /* Fonte 8-bit */
 }
 
 button:hover {
@@ -49,7 +52,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px #00ff00;
     border: 2px solid #00ff00;
-    max-width: 80%;
+    max-width: 90%; /* Aumentado um pouco */
     height: auto;
     margin: 50px auto;
     overflow-y: visible;
@@ -70,13 +73,15 @@ main {
     color: #00ff00;
     font-size: 1.5rem;
     text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Fonte 8-bit */
 }
 
 .content-section p {
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.8rem; /* Reduzido o tamanho da fonte para os parágrafos */
     line-height: 1.6;
     text-align: justify;
+    font-family: 'Press Start 2P', cursive; /* Fonte 8-bit */
 }
 
 .content-section strong {
@@ -111,11 +116,19 @@ main {
     margin: 50px auto;
 }
 
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    #container {
+        margin: 0 10px; /* Margem pequena nas laterais */
+    }
+}
+
 footer {
     margin-top: 50px;
     text-align: center;
     color: #00ff00;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduzido o tamanho da fonte do rodapé */
+    font-family: 'Press Start 2P', cursive; /* Fonte 8-bit */
 }
 
 footer a {
@@ -133,7 +146,7 @@ footer a:hover {
     text-align: center;
     margin-top: 20px;
     color: #00ff00;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduzido o tamanho da fonte */
 }
 
 #agradecimento p {

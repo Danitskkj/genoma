@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     audio.addEventListener("ended", () => {
         const thankYouMessage = document.createElement("div");
         thankYouMessage.innerHTML = "<h2 class='text-center text-2xl' id='agradecimento'>Obrigado por explorar o Genoma!</h2>";
-        document.body.appendChild(thankYouMessage);
+        const footer = document.querySelector("footer");
+        document.body.insertBefore(thankYouMessage, footer); // Insere a mensagem antes do rodapé
     });
 });
