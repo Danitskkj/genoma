@@ -1,42 +1,39 @@
-# Genome Website
+# Site do Genoma
 
-## Overview
-The Genome Website is an interactive project designed to educate users about genomes. It features a main page with a play button that triggers audio narration while transitioning through various sections related to the structure and significance of genomes.
+## Resumo
+Este projeto é um trabalho escolar que apresenta informações sobre o genoma de forma interativa e educativa. O site foi desenvolvido por mim, com o objetivo de explicar conceitos como DNA, genes, proteínas e o Projeto Genoma Humano, utilizando áudio, imagens e transições suaves entre seções.
 
-## Project Structure
+## Estrutura do Projeto
 ```
-genome-website
-├── index.html       # Main HTML file containing the website structure
-├── styles.css       # CSS file for styling the website
-├── script.js        # JavaScript file for interactivity and audio control
+genoma
+├── index.html       # Estrutura principal do site
+├── styles.css       # Estilo visual do site
+├── script.js        # Interatividade e controle de áudio
 ├── audio
-│   └── audio.mp3    # Audio file containing the narrative
-└── README.md        # Documentation for the project
+│   └── audio.mp3    # Narração em áudio
+├── images           # Imagens utilizadas no site
+│   ├── genoma.jpg
+│   ├── genomapc.jpg
+│   ├── estruturadna.jpg
+│   ├── gene.png
+│   ├── genomaregulacao.png
+│   ├── genomacodigo.jpg
+│   ├── genomahumano.webp
+│   └── dnahumano.webp
+└── README.md        # Documentação do projeto
 ```
 
-## Setup Instructions
-1. **Clone the Repository**: 
-   ```
-   git clone <repository-url>
-   cd genome-website
-   ```
+## Como Abrir
+1. Abra o arquivo `index.html` em um navegador para visualizar o site.
+2. Certifique-se de que o arquivo de áudio `audio.mp3` está na pasta `audio` para que a narração funcione corretamente.
 
-2. **Open the Project**: Open `index.html` in a web browser to view the website.
-
-3. **Audio File**: Ensure that the audio file `audio.mp3` is located in the `audio` directory for proper playback.
-
-## Features
-- Interactive sections that provide information about genomes.
-- Audio narration that plays as users navigate through the content.
-- Smooth transitions between sections for an enhanced user experience.
-
-## Technologies Used
+## Tecnologias Utilizadas
 - HTML5
 - CSS3
 - JavaScript
 
-## Contributing
-Feel free to submit issues or pull requests for improvements or bug fixes. 
+## Demo
+Você pode acessar uma demo do site em: [https://genoma-humano.vercel.app](https://genoma-humano.vercel.app)
 
-## License
-This project is licensed under the MIT License.
+## Créditos
+Trabalho desenvolvido por mim como parte de um projeto escolar.

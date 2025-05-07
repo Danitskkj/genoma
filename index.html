@@ -10,12 +10,12 @@
 <body class="bg-black text-green-400 font-mono">
     <header id="intro" class="text-center py-20">
         <h1 class="text-4xl font-bold">Genoma - O Manual da Vida</h1>
-        <br><br>
-        <button id="playAudio" class="mt-5 px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 bg-opacity-75">
+        <br><br><br>
+        <button id="playAudio" class="mt-5 px-6 py-2 bg-black-800 text-white rounded hover:bg-black-700 bg-opacity-75">
             Reproduzir 
         </button>
     </header>
-    <main class="hidden max-w-4xl mx-auto p-6 bg-black-900 rounded-lg shadow-lg space-y-10">
+    <main class="max-w-4xl mx-auto p-6 bg-black-900 rounded-lg shadow-lg space-y-10">
         <section class="content-section" id="section1" data-time="0">
             <h2 class="text-2xl font-bold">- Imagine um Manual de Instruções</h2>
             <img src="images/genoma.jpg" alt="Placeholder Image" class="my-4 rounded">
@@ -56,12 +56,21 @@
             <img src="images/dnahumano.webp" alt="Placeholder Image" class="my-4 rounded">
             <p>O <strong class="text-green-400">genoma</strong> é, enfim, a linguagem da vida. Um código invisível que habita cada célula, contando silenciosamente a história de quem somos — e de como a natureza escreve seus segredos.</p>
         </section>
+        <section class="content-section" id="section9">
+            <h2 class="text-2xl font-bold">- Gameplay da Mari</h2>
+            <div class="my-4 rounded overflow-hidden">
+                <iframe width="200" height="400" src="https://www.youtube.com/embed/Q6yDUUQfFE0" title="Gameplay da Mari" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+            </div>
+        </section>
     </main>
     <audio id="genomeAudio" src="audio/audio.mp3"></audio>
     <script src="script.js"></script>
     <footer>
-        <p>Feito por: Daniel, Thierry, Matheus e Mariana</p>
-        <br><br>
+        <p>Feito por: Daniel, Thierry, Matheus, Enzo e Mariana</p>
+        <p>
+            <a id="githubLink" href="https://github.com/Danitskkj/genoma" target="_blank" class="text-green-400 hover:underline">GitHub</a>
+        </p>
     </footer>
 </body>
 </html>

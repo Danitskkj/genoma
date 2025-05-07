@@ -1,44 +1,44 @@
 body {
-    font-family: 'Courier New', Courier, monospace; /* Console-like font */
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    overflow-y: auto; /* Enable vertical scrolling for the entire site */
-    background-color: #000; /* Terminal-like background */
-    color: #ffffff; /* White text */
+    overflow-y: auto;
+    background-color: #000; /* Fundo estilo terminal */
+    color: #ffffff;
 }
 
 header {
     text-align: center;
     margin-top: 15%;
-    color: #00ff00; /* Terminal green */
+    color: #00ff00; /* Verde terminal */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #003300; /* Dark green */
-    color: #ffffff; /* White text */
+    background-color: #003300;
+    color: #ffffff;
     border: 1px solid #00ff00;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #005500; /* Slightly lighter green */
+    background-color: #005500;
 }
 
 main {
     display: none;
     padding: 20px;
-    background-color: #001a00; /* Darker green for contrast */
+    background-color: #001a00;
     border-radius: 8px;
     box-shadow: 0 0 10px #00ff00;
-    border: 2px solid #00ff00; /* Terminal green border */
-    max-width: 80%; /* Adjust width for responsiveness */
-    height: auto; /* Allow content to determine height */
-    margin: 50px auto; /* Add top and bottom margins */
-    overflow-y: visible; /* Remove scrolling inside the container */
+    border: 2px solid #00ff00;
+    max-width: 80%;
+    height: auto;
+    margin: 50px auto;
+    overflow-y: visible;
 }
 
 .content-section {
@@ -53,36 +53,36 @@ main {
 }
 
 .content-section h2 {
-    color: #00ff00; /* Terminal green for titles */
-    font-size: 1.5rem; /* Uniform title size */
-    text-align: center; /* Center align titles */
+    color: #00ff00;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .content-section p {
-    color: #ffffff; /* White text */
-    font-size: 1rem; /* Uniform paragraph size */
-    line-height: 1.6; /* Improve readability */
-    text-align: justify; /* Justify text for better alignment */
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .content-section strong {
-    color: #00ff00; /* Terminal green for highlighted words */
+    color: #00ff00;
 }
 
 .content-section::before {
-    content: "> "; /* Terminal-like prefix */
-    color: #00ff00; /* Terminal green */
+    content: "> ";
+    color: #00ff00;
     font-weight: bold;
 }
 
 .content-section img {
-    width: 100%; /* Make images responsive */
-    max-width: 600px; /* Limit the width */
-    max-height: 300px; /* Limit the height */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px; /* Altura máxima ajustada */
+    height: auto;
     display: block;
-    margin: 0 auto; /* Center images */
-    border-radius: 8px; /* Keep rounded corners */
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 #container {
@@ -92,25 +92,50 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    max-width: 80%; /* Adjust width for responsiveness */
-    height: auto; /* Allow content to determine height */
-    margin: 50px auto; /* Add top and bottom margins */
+    max-width: 80%;
+    height: auto;
+    margin: 50px auto;
 }
 
 footer {
-    margin-top: 50px; /* Add space at the bottom */
+    margin-top: 50px;
     text-align: center;
-    color: #00ff00; /* Terminal green */
-    font-size: 1.2rem; /* Slightly larger text */
+    color: #00ff00;
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #00ff00; /* Alterado para o mesmo verde do site */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00cc00;
+    text-decoration: underline;
 }
 
 #agradecimento {
     text-align: center;
     margin-top: 20px;
-    color: #00ff00; /* Terminal green */
-    font-size: 1.5rem; /* Larger text for emphasis */
+    color: #00ff00;
+    font-size: 1.5rem;
 }
+
 #agradecimento p {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
+}
+
+#section9 {
+    opacity: 100;
+}
+
+#section9 iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+#githubLink {
+    color: #00ff00; /* Verde terminal */
 }

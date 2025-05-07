@@ -6,15 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSectionIndex = 0;
 
     playButton.addEventListener("click", () => {
-        intro.style.display = "none"; // Hide intro
-        document.querySelector("main").style.display = "block"; // Show main content
-        audio.play(); // Start audio playback
+        intro.style.display = "none"; // Esconde a introdução
+        document.querySelector("main").style.display = "block"; // Mostra o conteúdo principal
+        audio.play();
     });
 
     audio.addEventListener("timeupdate", () => {
         const currentTime = audio.currentTime;
 
-        // Check if it's time to show the next section
         if (
             currentSectionIndex < sections.length &&
             currentTime >= parseFloat(sections[currentSectionIndex].dataset.time)
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     audio.addEventListener("ended", () => {
-        // Show a thank-you message when the audio ends
         const thankYouMessage = document.createElement("div");
         thankYouMessage.innerHTML = "<h2 class='text-center text-2xl' id='agradecimento'>Obrigado por explorar o Genoma!</h2>";
         document.body.appendChild(thankYouMessage);
