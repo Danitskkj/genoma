@@ -36,4 +36,4 @@ genoma
 Você pode acessar uma demo do site em: [https://genoma-humano.vercel.app](https://genoma-humano.vercel.app)
 
 ## Créditos
-Código desenvolido por mim e o material pelo meu grupo.
+Código desenvolvido por mim e o material foi pelo meu grupo.
