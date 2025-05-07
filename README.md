@@ -1,7 +1,7 @@
-# Site do Genoma
+# Genoma Site
 
 ## Resumo
-Este projeto é um trabalho escolar que apresenta informações sobre o genoma de forma interativa e educativa. O site foi desenvolvido por mim, com o objetivo de explicar conceitos como DNA, genes, proteínas e o Projeto Genoma Humano, utilizando áudio, imagens e transições suaves entre seções.
+Este projeto é um trabalho escolar que apresenta informações sobre o genoma de forma interativa e educativa. O site foi desenvolvido, com o objetivo de explicar conceitos como DNA, genes, proteínas e o Projeto Genoma Humano, utilizando áudio, imagens e transições suaves entre seções.
 
 ## Estrutura do Projeto
 ```
